@@ -29,19 +29,19 @@ Full-stack application with Spring boot and React.js., JUNIT Tests , RESTful API
 
 ***MVP User Stories***
 
-- * As a User, I want to select a model I desire to start customizing my car, so that I can order a customized car. *
+- *As a User, I want to select a model I desire to start customizing my car, so that I can order a customized car. *
 
-- * As a User, I want to see all the options for customizing my car so that I can order my dream car. *
+- *As a User, I want to see all the options for customizing my car so that I can order my dream car. *
 
-- * As a User, I want to see my custom changes live so that I can visibly see what I am ordering. *
+- *As a User, I want to see my custom changes live so that I can visibly see what I am ordering. *
 
-- * As a User, I want to see my total price after customizing my car so that I can check if I can afford it. *
+- *As a User, I want to see my total price after customizing my car so that I can check if I can afford it. *
 
-- * As a User, I want to create an account so that I can save all my customized cars, and place an order. *
+- *As a User, I want to create an account so that I can save all my customized cars, and place an order. *
 
 ***Post MVP Stretch Goals***
 
-- * As a user, I can swipe the 3D previewed car so that I can see custom changes made live. *
+- *As a user, I can swipe the 3D previewed car so that I can see custom changes made live. *
 
 ---
 # EERD
