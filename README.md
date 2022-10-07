@@ -1,1 +1,75 @@
-# Tesla-Reimagined
+# Project Four - Tesla Reimagined
+
+![Netflix-Reimagined-Demo-Compressed](https://user-images.githubusercontent.com/108159910/191875985-c0817a66-5cce-4df3-aa99-59dc30b49ad9.gif)
+
+Version 2.0 
+Prepared by Brendon Van
+
+General Assembly SEIR-725ec | Unit 4 Capstone Project
+October 17 2022
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4b33aefe-a449-4fba-9d5d-0b96db0b064c/deploy-status)](https://app.netlify.com/sites/legendary-sunburst-8800a7/deploys)
+https://tesla-reimagined.netlify.app/
+
+
+## Project Description
+Tesla Clone but with UI/UX inspired by Nickelfox & Kushanthi Hasinika. 
+Full-stack application with Spring boot and React.js., JUNIT Tests , RESTful API.
+
+---
+# Wireframes
+## Home Page
+![Tesla-Website-Flow-Chart](https://user-images.githubusercontent.com/108159910/194673673-e5d00c46-5dff-421d-b692-59beb4d79c93.png)
+
+
+## Design Page
+![Tesla-Website-Flow-Chart2](https://user-images.githubusercontent.com/108159910/194673674-0d3b2937-710c-4812-8ec9-0c88ce0954b0.png)
+
+# MVP User Stories
+
+***MVP User Stories***
+
+- * As a User, I want to select a model I desire to start customizing my car, so that I can order a customized car. *
+
+- * As a User, I want to see all the options for customizing my car so that I can order my dream car. *
+
+- * As a User, I want to see my custom changes live so that I can visibly see what I am ordering. *
+
+- * As a User, I want to see my total price after customizing my car so that I can check if I can afford it. *
+
+- * As a User, I want to create an account so that I can save all my customized cars, and place an order. *
+
+***Post MVP Stretch Goals***
+
+- * As a user, I can swipe the 3D previewed car so that I can see custom changes made live. *
+
+---
+# ERDs
+# TODO:
+![Netflix-Reimagined-ERD](https://user-images.githubusercontent.com/108159910/191883897-e21742db-bfff-4841-8f91-e4ebd173cc42.png)
+
+---
+# API
+
+# TODO:
+[The Movie DB API Documentation](https://developers.themoviedb.org/3/getting-started/introduction)
+[Open Movie DB API Documentation](http://www.omdbapi.com/)
+[Youtube API Documentation](https://developers.google.com/youtube/v3)
+
+## API Response
+
+# TODO:
+```json
+API CODE HERE
+```
+
+
+# Component Hierarchy
+
+# TODO:
+![Component-Hierarchy](https://user-images.githubusercontent.com/108159910/190547438-98d8cded-8777-42a5-af31-a24c581d5f1a.png)
+
+
+# Contributors
+
+1. Brendon Van [Github Profile](https://github.com/brendonvan)
