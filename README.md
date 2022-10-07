@@ -22,7 +22,7 @@ Full-stack application with Spring boot and React.js., JUNIT Tests , RESTful API
 ![HomePageWireframe](https://user-images.githubusercontent.com/108159910/194674573-5ad7ea15-415a-47c5-a6dd-bf262038b473.png)
 
 
-## Design Page]
+## Design Page
 ![DesignPageWireframe](https://user-images.githubusercontent.com/108159910/194674580-937259e5-e243-42bb-ac19-85f0033cbecd.png)
 
 # MVP User Stories
