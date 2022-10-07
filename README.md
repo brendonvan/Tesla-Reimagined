@@ -19,11 +19,11 @@ Full-stack application with Spring boot and React.js., JUNIT Tests , RESTful API
 ---
 # Wireframes
 ## Home Page
-![Tesla-Website-Flow-Chart](https://user-images.githubusercontent.com/108159910/194673673-e5d00c46-5dff-421d-b692-59beb4d79c93.png)
+![HomePageWireframe](https://user-images.githubusercontent.com/108159910/194674573-5ad7ea15-415a-47c5-a6dd-bf262038b473.png)
 
 
-## Design Page
-![Tesla-Website-Flow-Chart2](https://user-images.githubusercontent.com/108159910/194673674-0d3b2937-710c-4812-8ec9-0c88ce0954b0.png)
+## Design Page]
+![DesignPageWireframe](https://user-images.githubusercontent.com/108159910/194674580-937259e5-e243-42bb-ac19-85f0033cbecd.png)
 
 # MVP User Stories
 
