@@ -1,6 +1,6 @@
 # Project Four - Tesla Reimagined
 
-![Netflix-Reimagined-Demo-Compressed](https://user-images.githubusercontent.com/108159910/191875985-c0817a66-5cce-4df3-aa99-59dc30b49ad9.gif)
+![Tesla-Reimagined-Preview](https://user-images.githubusercontent.com/108159910/194674105-026485d9-96bd-47c3-91cd-f3c294f7f918.png)
 
 Version 2.0 
 Prepared by Brendon Van
@@ -44,21 +44,21 @@ Full-stack application with Spring boot and React.js., JUNIT Tests , RESTful API
 - * As a user, I can swipe the 3D previewed car so that I can see custom changes made live. *
 
 ---
-# ERDs
-# TODO:
+# EERD
+TODO:
 ![Netflix-Reimagined-ERD](https://user-images.githubusercontent.com/108159910/191883897-e21742db-bfff-4841-8f91-e4ebd173cc42.png)
 
 ---
 # API
 
-# TODO:
+TODO:
 [The Movie DB API Documentation](https://developers.themoviedb.org/3/getting-started/introduction)
 [Open Movie DB API Documentation](http://www.omdbapi.com/)
 [Youtube API Documentation](https://developers.google.com/youtube/v3)
 
 ## API Response
 
-# TODO:
+TODO:
 ```json
 API CODE HERE
 ```
@@ -66,7 +66,7 @@ API CODE HERE
 
 # Component Hierarchy
 
-# TODO:
+TODO:
 ![Component-Hierarchy](https://user-images.githubusercontent.com/108159910/190547438-98d8cded-8777-42a5-af31-a24c581d5f1a.png)
 
 
