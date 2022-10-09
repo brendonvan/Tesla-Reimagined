@@ -51,9 +51,8 @@ Full-stack application with Spring boot and React.js., JUNIT Tests , RESTful API
 # API
 
 TODO:
-[The Movie DB API Documentation](https://developers.themoviedb.org/3/getting-started/introduction)
-[Open Movie DB API Documentation](http://www.omdbapi.com/)
-[Youtube API Documentation](https://developers.google.com/youtube/v3)
+[API Documentation](https://google.com)
+
 
 ## API Response
 
