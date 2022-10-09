@@ -62,13 +62,6 @@ TODO:
 API CODE HERE
 ```
 
-
-# Component Hierarchy
-
-TODO:
-![Component-Hierarchy](https://user-images.githubusercontent.com/108159910/190547438-98d8cded-8777-42a5-af31-a24c581d5f1a.png)
-
-
 # Contributors
 
 1. Brendon Van [Github Profile](https://github.com/brendonvan)
