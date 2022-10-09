@@ -44,9 +44,8 @@ Full-stack application with Spring boot and React.js., JUNIT Tests , RESTful API
 - *As a user, I can swipe the 3D previewed car so that I can see custom changes made live. *
 
 ---
-# EERD
-TODO:
-![Netflix-Reimagined-ERD](https://user-images.githubusercontent.com/108159910/191883897-e21742db-bfff-4841-8f91-e4ebd173cc42.png)
+# ERD
+![Tesla-Reimagined-ERD](https://user-images.githubusercontent.com/108159910/194731829-0a010ba1-df7b-4fd8-b87d-8e970d0eaa21.png)
 
 ---
 # API
