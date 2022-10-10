@@ -14,7 +14,7 @@ https://tesla-reimagined.netlify.app/
 
 ## Project Description
 Tesla Clone but with UI/UX inspired by Nickelfox & Kushanthi Hasinika. 
-Full-stack application with Spring boot and React.js., JUNIT Tests , RESTful API.
+Full-stack application with Spring boot and React.js., SQL or PostgreSQL
 
 ---
 # Wireframes
