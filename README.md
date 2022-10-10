@@ -52,7 +52,7 @@ Full-stack application with Spring boot and React.js., JUNIT Tests , RESTful API
 
 ## Proof CRUD Code w/ MySQL Database (Might switch to PostgreSQL in future)
 
-##Create:
+## Create:
 ```json
 package com.luv2code.hibernate.demo;
 
@@ -106,7 +106,7 @@ public class CreateStudentDemo {
 
 ```
 
-##Read:
+## Read:
 ```json
 package com.luv2code.hibernate.demo;
 
@@ -180,7 +180,7 @@ public class ReadStudentDemo {
 
 ```
 
-##Update:
+## Update:
 ```json
 package com.luv2code.hibernate.demo;
 
@@ -252,7 +252,7 @@ public class UpdateStudentDemo {
 
 ```
 
-##Delete:
+## Delete:
 ```json
 package com.luv2code.hibernate.demo;
 
