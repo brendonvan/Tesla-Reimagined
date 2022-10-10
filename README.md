@@ -310,7 +310,7 @@ public class DeleteStudentDemo {
 
 ```
 
-## Delete:
+## Model:
 ```json
 package com.luv2code.jdbc;
 
