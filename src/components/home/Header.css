@@ -1,0 +1,21 @@
+.header {
+    position: fixed;
+    width: 100vw;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 4.5rem 3rem 3rem;
+    z-index: 2;
+}
+
+@media all and (max-width: 992px) {
+  .header {
+    position: fixed;
+    padding: 3rem 2.5rem 3rem 1rem;
+}
+}
+
+.dropdown-menu {
+  cursor: pointer;
+}
