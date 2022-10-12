@@ -1,8 +1,10 @@
 import './App.css'
-import Home from './pages/Home';
-import MoreInfo from './pages/MoreInfo'
-import Design from './pages/Design';
 import { Routes, Route } from 'react-router-dom';
+import Home from './pages/App/Home';
+import MoreInfo from './pages/App/MoreInfo'
+import Design from './pages/App/Design';
+import Login from './pages/Login/Login';
+import Register from './pages/Login/Register';
 
 function App() {
 
@@ -19,6 +21,9 @@ function App() {
       <Route path='/model3/design' element={<Design/>}></Route>
       <Route path='/models/design' element={<Design/>}></Route>
       <Route path='/roadster/design' element={<Design/>}></Route>
+
+      <Route path='/oauth2/v1/fakeauthorize/' element={<Login/>}></Route>
+      <Route path='/oauth2/v1/fakeregister/' element={<Register/>}></Route>
     </Routes>
   );
 }

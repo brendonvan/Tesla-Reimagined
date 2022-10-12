@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useState } from 'react';
 
 function Landing() {
-
   // Initialize current display view
   let initialDisplayView = { 
     name: 'CYBER TRUCK',

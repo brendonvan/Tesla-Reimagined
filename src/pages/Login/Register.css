@@ -1,0 +1,90 @@
+.register-content-wrapper {
+    padding: 8rem 0rem 0rem 0rem;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(161, 161, 161, 0.1);
+    backdrop-filter: blur(0.5rem);
+    z-index: 2;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.signup-form h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.first-name-input h3, .last-name-input h3, .email-input h3, .password-input h3 {
+    font-size: 1rem;
+    margin-left: 1rem;
+    color: rgb(126, 126, 130);
+}
+
+.first-name-input input, .last-name-input input, .email-input input, .password-input input {
+    width: 18rem;
+    height: 2.2rem;
+    border: none;
+    border-radius: 3rem;
+    background-color: rgb(245, 245, 245);
+    margin: 0.6rem 0rem 1rem 0rem;
+    padding-left: 1rem;
+}
+
+.email-input input:focus {
+    outline: none;
+    border: 1.9px solid rgb(169, 169, 169);
+  }
+
+.signup-form button {
+    width: 18rem;
+    height: 2.2rem;
+    border: none;
+    border-radius: 3rem;
+    background-color: rgb(60, 105, 225);
+    color: white;
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    margin: 1rem 0rem 1rem 0rem;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: rgb(46, 83, 184);
+}
+
+.or-dividor {
+    margin-top: 1rem;
+}
+
+.sign-in button {
+    width: 18rem;
+    height: 2.2rem;
+    border: 2px solid rgb(245, 245, 245);
+    border-radius: 3rem;
+    background-color: rgba(161, 161, 161, 0.1);
+    color: rgb(245, 245, 245);
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    margin: 2rem 0rem 1rem 0rem;
+    cursor: pointer;
+}
+
+.sign-in button:hover {
+    color: rgb(10, 10, 10);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.register-error {
+    font-size: 1rem;
+    margin-left: 1rem;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
