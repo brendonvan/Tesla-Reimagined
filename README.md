@@ -8,7 +8,7 @@ Prepared by Brendon Van
 General Assembly SEIR-725ec | Unit 4 Capstone Project
 October 17 2022
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4b33aefe-a449-4fba-9d5d-0b96db0b064c/deploy-status)](https://app.netlify.com/sites/legendary-sunburst-8800a7/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4b3aefe-a449-4fba-9d5d-0b96db0b064c/deploy-status)](https://app.netlify.com/sites/legendary-sunburst-8800a7/deploys)
 https://tesla-reimagined.netlify.app/
 
 
