@@ -66,7 +66,7 @@ function Design(props) {
           </div>
           <div className="options">
             <div className="options-wheel">
-              <h2>Wheel</h2>
+              <h2>Wheels</h2>
               <div className="wheel-selection">
                 <img src="/icons/wheel-19-tempest.png" alt="wheel-19-tempest.png" />
                 <img src="/icons/wheel-21-arachnid.png" alt="wheel-21-arachnid.png" />
@@ -85,8 +85,41 @@ function Design(props) {
               <div className="interior-details"><p>All Black</p><p>Included</p></div>
             </div>
           </div>
-          <div className="options"><div className="options-enhanced-autopilot"></div></div>
-          <div className="options"><div className="options-full-autopilot"></div></div>
+          <div className="options">
+            <div className="options-enhanced-autopilot">
+              <h2>Enhanced Autopilot</h2>
+              
+              <div>
+                <ul>
+                  <li><p>Navigate on Autopilot</p></li>
+                  <li><p>Auto Lane Change</p></li>
+                  <li><p>Autopark</p></li>
+                  <li><p>Summon</p></li>
+                  <li><p>Smart Summon</p></li>
+                </ul>
+              </div>
+              <div className="options-enhanced-autopilot-add">
+                <button>Add</button>
+                <p>$6,000</p>
+              </div>
+            </div>
+          </div>
+          <div className="options">
+          <div className="options-full-autopilot">
+              <h2>Full Self-Driving Capability</h2>
+              
+              <div>
+                <ul>
+                  <li><p>All functionality of Basic Autopilot and Enhanced Autopilot</p></li>
+                  <li><p>Traffic Light and Stop Sign Control</p></li>
+                </ul>
+              </div>
+              <div className="options-full-autopilot-add">
+                <button>Add</button>
+                <p>$15,000</p>
+              </div>
+            </div>  
+          </div>
         </div>
       </div>
       
