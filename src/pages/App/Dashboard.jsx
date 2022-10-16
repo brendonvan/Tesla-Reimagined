@@ -11,7 +11,7 @@ function Dashboard() {
         <div className="dashboard-list">
           <div className="dashboard-item">
             <div className="design-img">
-              <img src="/icons/cybertruck-inverted.png" alt="/icons/dashboard.svg" />
+              <img src="/icons/cybertruck-preview.png" alt="/icons/dashboard.svg" />
             </div>
             <div className="dashboard-item-info">
               <div className="design-info">
@@ -23,7 +23,7 @@ function Dashboard() {
           </div>
           <div className="dashboard-item">
             <div className="design-img">
-              <img src="/icons/model3-inverted.png" alt="/icons/dashboard.svg" />
+              <img src="/icons/model3-preview.png" alt="/icons/dashboard.svg" />
             </div>
             <div className="dashboard-item-info">
               <div className="design-info">
@@ -35,7 +35,7 @@ function Dashboard() {
           </div>
           <div className="dashboard-item">
             <div className="design-img">
-              <img src="/icons/models-inverted.png" alt="/icons/dashboard.svg" />
+              <img src="/icons/models-preview.png" alt="/icons/dashboard.svg" />
             </div>
             <div className="dashboard-item-info">
               <div className="design-info">
@@ -47,7 +47,7 @@ function Dashboard() {
           </div>
           <div className="dashboard-item">
             <div className="design-img">
-              <img src="/icons/roadster-inverted.png" alt="/icons/dashboard.svg" />
+              <img src="/icons/roadster-preview.png" alt="/icons/dashboard.svg" />
             </div>
             <div className="dashboard-item-info">
               <div className="design-info">

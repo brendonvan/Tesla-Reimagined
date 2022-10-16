@@ -56,14 +56,14 @@
   margin: 0;
 }
 
-.dropdown-menu ul > a {
+.dropdown-item {
   display: flex;
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.dropdown-menu ul > a:hover {
+.dropdown-menu ul > li:hover {
   cursor: pointer;
   filter: brightness(75%);
 }
@@ -73,7 +73,7 @@ li img {
   padding-right: 1rem;
 }
 
-a {
+p {
   text-decoration: none;
   color: white;
 }
