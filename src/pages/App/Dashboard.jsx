@@ -1,7 +1,29 @@
 import './Dashboard.css';
+import { useState, useEffect, useRef } from 'react';
 import Header from '../../components/Header';
 
+
 function Dashboard() {
+  let [dashboardList, setDashboardList] = useState([]);
+  function fetchList() {
+    const configs = {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }
+
+    fetch(`http://localhost:8080/dashboard`, configs)
+    .then((res)=> res.json())
+    .then((json) => {
+        setDashboardList(json);
+    })
+    .catch(console.error)
+  }
+
+  useEffect(() => {
+    fetchList();
+  }, []);
 
   return (
     <>
@@ -9,54 +31,24 @@ function Dashboard() {
       <div className='dashboard-page'>
         <h1>Dashboard</h1>
         <div className="dashboard-list">
-          <div className="dashboard-item">
-            <div className="design-img">
-              <img src="/icons/cybertruck-preview.png" alt="/icons/dashboard.svg" />
-            </div>
-            <div className="dashboard-item-info">
-              <div className="design-info">
-                <h4>Cybertruck</h4>
-                <p>RN11534534</p>
+          
+          {dashboardList?.map((design) => {
+            return (
+              <div className="dashboard-item">
+                <div className="design-img">
+                  <img src={`/icons/${ design.name.replace(/ /g,'').toLowerCase() }-preview.png`} alt={`${ design.name }`} />
+                </div>
+                <div className="dashboard-item-info">
+                  <div className="design-info">
+                    <h4>{ design.name }</h4>
+                    <p>RN{ design.id }</p>
+                  </div>
+                  <a href={`/${design.name.replace(/ /g,'').toLowerCase()}/design/${design.id}`}>Manage</a>
+                </div>
               </div>
-              <a href="#">Manage</a>
-            </div>
-          </div>
-          <div className="dashboard-item">
-            <div className="design-img">
-              <img src="/icons/model3-preview.png" alt="/icons/dashboard.svg" />
-            </div>
-            <div className="dashboard-item-info">
-              <div className="design-info">
-                <h4>Model 3</h4>
-                <p>RN11534534</p>
-              </div>
-              <a href="#">Manage</a>
-            </div>
-          </div>
-          <div className="dashboard-item">
-            <div className="design-img">
-              <img src="/icons/models-preview.png" alt="/icons/dashboard.svg" />
-            </div>
-            <div className="dashboard-item-info">
-              <div className="design-info">
-                <h4>Model S</h4>
-                <p>RN11534534</p>
-              </div>
-              <a href="#">Manage</a>
-            </div>
-          </div>
-          <div className="dashboard-item">
-            <div className="design-img">
-              <img src="/icons/roadster-preview.png" alt="/icons/dashboard.svg" />
-            </div>
-            <div className="dashboard-item-info">
-              <div className="design-info">
-                <h4>Roadster</h4>
-                <p>RN11534534</p>
-              </div>
-              <a href="#">Manage</a>
-            </div>
-          </div>
+            )} 
+          )}
+          
         </div>
       </div>
     </>
