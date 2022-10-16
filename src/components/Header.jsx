@@ -12,8 +12,8 @@ function Header() {
                 <img src="/icons/dropdown-menu.svg" alt="dropdown-menu" className="menu-trigger" onClick={ () => { setOpen(!open) }} />
                 <div className={ `dropdown-menu ${ open ? 'active' : 'inactive' }` }>
                     <ul>
-                        <DropdownItem img={"/icons/dashboard.svg"} text={"Dashboard"} href="/dashboard"/>
-                        <DropdownItem img={"/icons/logout.svg"} text={"Logout"} href="/oauth2/v1/fakeauthorize/"/>
+                        <Link to={ "/dashboard" }><DropdownItem img={"/icons/dashboard.svg"} text={"Dashboard"}/></Link>
+                        <Link to={ "/oauth2/v1/fakeauthorize/" }><DropdownItem img={"/icons/logout.svg"} text={"Logout"}/></Link>
                     </ul>
                 </div>
             </div>
@@ -25,7 +25,7 @@ function DropdownItem(props) {
     return(
         <li>
             <img src={ props.img } alt={ props.text } />
-            <Link to={ props.href }><a>{ props.text }</a></Link>
+            <a>{ props.text }</a>
         </li>
     );
 }

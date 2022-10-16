@@ -50,20 +50,20 @@
   transition: 500ms ease;
 }
 
-ul {
+.dropdown-menu ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-li {
+.dropdown-menu ul > a {
   display: flex;
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-li:hover {
+.dropdown-menu ul > a:hover {
   cursor: pointer;
   filter: brightness(75%);
 }
