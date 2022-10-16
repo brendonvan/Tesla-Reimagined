@@ -78,9 +78,9 @@ function Design() {
         </div>
         <div className="design-select">
           <Link to={`/cybertruck/design/${ params.id }`}><p id="selected-design">Cybertruck</p></Link>
-          <Link to={`/model3/design/${ params.id }`}><p>Model 3</p></Link>
-          <Link to={`/models/design/${ params.id }`}><p>Model S</p></Link>
-          <Link to={`/roadster/design/${ params.id }`}><p>Roadster</p></Link>
+          <p>Model 3</p>
+          <p>Model S</p>
+          <p>Roadster</p>
         </div>
         <div className="design-display">
           <img src="/icons/placeholder.png" alt="design-display" />
