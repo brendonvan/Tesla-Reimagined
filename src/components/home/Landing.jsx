@@ -5,7 +5,7 @@ import { useState } from 'react';
 function Landing() {
   // Initialize current display view
   let initialDisplayView = { 
-    name: 'CYBER TRUCK',
+    name: 'CYBERTRUCK',
     description: 'Better utility than a truck with more performance than a sports car',
     orderPath: '/cybertruck/design',
     learnMorePath: '/cybertruck',
@@ -33,7 +33,7 @@ function Landing() {
 
   function setViewToCyberTruck() {
     setDisplayView({ 
-      name: 'CYBER TRUCK',
+      name: 'CYBERTRUCK',
       description: 'Better utility than a truck with more performance than a sports car',
       orderPath: '/cybertruck/design',
       learnMorePath: '/cybertruck',
@@ -94,7 +94,7 @@ function Landing() {
       motor: 'AWD',
       carOptions: { 
         firstOption: { 
-          name: 'Cyber Truck',
+          name: 'Cybertruck',
           path: 'cybertruck'
          },
          secondOption: { 
@@ -120,7 +120,7 @@ function Landing() {
       motor: 'AWD',
       carOptions: { 
         firstOption: { 
-          name: 'Cyber Truck',
+          name: 'Cybertruck',
           path: 'cybertruck'
          },
          secondOption: { 

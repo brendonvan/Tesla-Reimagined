@@ -1,0 +1,252 @@
+.design-page {
+    padding: 6rem 0rem 0rem 0rem;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(0.5rem);
+    z-index: 2;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+    "preview preview preview"
+    "select display specs"
+    "controls controls controls";
+    grid-template-rows: 1fr 5fr 2.5fr;
+    grid-template-columns: .5fr 2fr .5fr;   
+}
+
+.design-preview {
+    grid-area: preview;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+}
+
+.design-preview h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.design-preview button {
+    width: 9rem;
+    height: 2.2rem;
+    border: none;
+    border-radius: 3rem;
+    background-color: var(--color-theme);
+    color: black;
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    margin: 1rem 0rem 1rem 0rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.design-preview button:hover {
+    background-color: var(--color-theme-press);
+}
+
+.design-select {
+    grid-area: select;
+    margin-left: 5rem;
+    display: flex;
+    flex-flow: column;
+    align-items: left;
+    justify-content: space-around;
+}
+
+.design-select p {
+    color: rgb(200, 200, 200);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+#selected-design {
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+}
+
+
+.design-display {
+    grid-area: display;
+    overflow: hidden;
+}
+
+.design-display {
+    grid-area: display;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.design-display img {
+    width: auto;
+    height: 100%;
+}
+
+.design-specs {
+    grid-area: specs;
+    margin-right: 5rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+
+}
+
+.specs-item h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: right;
+}
+
+.specs-item p {
+    text-align: right;
+    color: rgb(200, 200, 200);
+}
+
+.design-controls {
+    grid-area: controls;
+    width: 100%;
+    height: 15rem;
+    margin: 1rem 3rem 1rem 3rem;
+    padding-right: 7rem;
+    overflow: scroll;
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    overflow: scroll;
+    z-index: 1;
+}
+
+.design-controls::-webkit-scrollbar {
+    display: none;
+}
+
+.options {
+    width: 25rem;
+    height: 100%;
+    margin: 1rem .5rem 1rem .5rem;
+    background-color: rgb(16, 16, 16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+.options-motor {
+    width: 90%;
+    height: 80%;
+}
+
+.options-motor > p {
+    font-weight: 600;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.motor-option-1, .motor-option-2 {
+    display: flex;
+    justify-content: space-between;
+    border: 1.2px solid grey;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.motor-option-1:hover, .motor-option-2:hover {
+    border: 2px solid var(--color-theme);
+}
+
+.options-paint, .options-wheel, .options-interior {
+    width: 90%;
+    height: 80%;
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 0.03rem;
+}
+
+.options-paint img, .options-interior img {
+    width: 2.5rem;
+    height: 2.5rem;
+
+}
+
+.options-wheel img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.paint-selection, .wheel-selection, .interior-selection {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.paint-selection > img, .wheel-selection > img, .interior-selection > img {
+    margin: 0.5rem;
+}
+
+.paint-selection > img:hover, .wheel-selection > img:hover, .interior-selection > img:hover {
+    border: 3px solid var(--color-theme);
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.paint-details :first-child, .wheel-details :first-child, .interior-details :first-child {
+    font-weight: 600;
+}
+
+.paint-details :last-child, .wheel-details :last-child, .interior-details :last-child {
+    font-weight: 300;
+}
+
+li::marker {
+	color: white;
+}
+
+.options-enhanced-autopilot, .options-full-autopilot {
+    width: 90%;
+    height: 80%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.options-enhanced-autopilot > p, .options-full-autopilot > p {
+    font-size: 1.1rem;
+    color: rgb(200, 200, 200);
+}
+
+.options-enhanced-autopilot div, .options-full-autopilot div {
+    width: 70%;
+    text-align: left;
+}
+
+.options-enhanced-autopilot-add, .options-full-autopilot-add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options-enhanced-autopilot-add button, .options-full-autopilot-add button {
+    width: 8rem;
+    height: 1.5rem;
+    color: black;
+    font-weight: 500;
+    background-color: var(--color-theme);
+    border: none;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+.options-enhanced-autopilot-add button:hover, .options-full-autopilot-add button:hover {
+    background-color: var(--color-theme-press);
+    cursor: pointer;
+}
