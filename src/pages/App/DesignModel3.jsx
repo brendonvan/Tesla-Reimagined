@@ -3,14 +3,14 @@ import { useState, useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Header from '../../components/Header';
 
-function Design(props) {
+function Design() {
 
   const [design, setDesign] = useState({
     name: "Model 3",
     range: 267,
     top_speed: 140,
     zero_to_sixty: 5.8,
-    motor_options: "Rear-Wheel Motor",
+    motor_options: "Rear-Wheel Drive",
     paint_options: "Pearl White Multi-Coat",
     wheel_options: "19\" Tempest Wheels",
     interior_options: "All Black",
@@ -88,21 +88,21 @@ function Design(props) {
         <div className="design-controls">
           <div className="options">
             <div className="options-motor">
+              <p>Rear-Wheel Drive</p>
+              <div onClick={ () => { setDesign({ ...design, motor_options: "Rear-Wheel Drive" }) } } className="motor-option-1" id={ design.motor_options === "Rear-Wheel Drive" ? "option-selected" : "" }><p>Model 3</p><p>$40,390</p></div>
               <p>Dual Motor All-Wheel Drive</p>
-              <div className="motor-option-1"><p>Model 3</p><p>$40,390</p></div>
-              <p>Tri Motor All-Wheel Drive</p>
-              <div className="motor-option-2"><p>Model Performance</p><p>$56,390</p></div>
+              <div onClick={ () => { setDesign({ ...design, motor_options: "Dual Motor" }) } } className="motor-option-2" id={ design.motor_options === "Dual Motor" ? "option-selected" : ""  }><p>Model 3 Performance</p><p>$56,390</p></div>
             </div>  
           </div>
           <div className="options">
             <div className="options-paint">
               <h2>Paint</h2>
               <div className="paint-selection">
-                <img src="/icons/paint-pearl-white-multi-coat.png" alt="paint-pearl-white-multi-coat.png" />
-                <img src="/icons/paint-solid-black.png" alt="paint-solid-black.png" />
-                <img src="/icons/paint-midnight-silver-metallic.png" alt="paint-midnight-silver-metallic.png" />
-                <img src="/icons/paint-deep-blue-metalic.png" alt="paint-deep-blue-metalic.png" />
-                <img src="/icons/paint-red-multi-coat.png" alt="paint-red-multi-coat.png" />
+                <img onClick={ () => { setDesign({ ...design, paint_options: "Pearl White Multi-Coat" }) } } id={ design.paint_options === "Pearl White Multi-Coat" ? "multi-option-selected" : ""  } src="/icons/paint-pearl-white-multi-coat.png" alt="paint-pearl-white-multi-coat.png" />
+                <img onClick={ () => { setDesign({ ...design, paint_options: "Midnight Silver Metallic" }) } } id={ design.paint_options === "Midnight Silver Metallic" ? "multi-option-selected" : ""  } src="/icons/paint-solid-black.png" alt="paint-solid-black.png" />
+                <img onClick={ () => { setDesign({ ...design, paint_options: "Deep Blue Metallic" }) } } id={ design.paint_options === "Deep Blue Metallic" ? "multi-option-selected" : ""  } src="/icons/paint-midnight-silver-metallic.png" alt="paint-midnight-silver-metallic.png" />
+                <img onClick={ () => { setDesign({ ...design, paint_options: "Solid Black" }) } } id={ design.paint_options === "Solid Black" ? "multi-option-selected" : ""  } src="/icons/paint-deep-blue-metalic.png" alt="paint-deep-blue-metalic.png" />
+                <img onClick={ () => { setDesign({ ...design, paint_options: "Red Multi-Coat" }) } } id={ design.paint_options === "Red Multi-Coat" ? "multi-option-selected" : ""  } src="/icons/paint-red-multi-coat.png" alt="paint-red-multi-coat.png" />
               </div>
               <div className="paint-details"><p>{ design.paint_options }</p><p>Included</p></div>
             </div>
@@ -111,8 +111,8 @@ function Design(props) {
             <div className="options-wheel">
               <h2>Wheels</h2>
               <div className="wheel-selection">
-                <img src="/icons/wheel-19-tempest.png" alt="wheel-19-tempest.png" />
-                <img src="/icons/wheel-21-arachnid.png" alt="wheel-21-arachnid.png" />
+                <img onClick={ () => { setDesign({ ...design, wheel_options: "18\" Aero Wheels" }) } } id={ design.wheel_options === "18\" Aero Wheels" ? "multi-option-selected" : ""  } src="/icons/wheel-19-tempest.png" alt="wheel-19-tempest.png" />
+                <img onClick={ () => { setDesign({ ...design, wheel_options: "19\" Sport Wheels" }) } } id={ design.wheel_options === "19\" Sport Wheels" ? "multi-option-selected" : ""  } src="/icons/wheel-21-arachnid.png" alt="wheel-21-arachnid.png" />
               </div>
               <div className="wheel-details"><p>{ design.wheel_options }</p><p>Included</p></div>
             </div>
@@ -121,9 +121,9 @@ function Design(props) {
             <div className="options-interior">
               <h2>Interior</h2>
               <div className="interior-selection">
-                <img src="/icons/interior-all-black.png" alt="interior-all-black.png" />
-                <img src="/icons/interior-black-and-white.png" alt="interior-black-and-white.png" />
-                <img src="/icons/interior-cream.png" alt="interior-cream.png" />
+                <img onClick={ () => { setDesign({ ...design, interior_options: "All Black" }) } } id={ design.interior_options === "All Black" ? "multi-option-selected" : ""  } src="/icons/interior-all-black.png" alt="interior-all-black.png" />
+                <img onClick={ () => { setDesign({ ...design, interior_options: "Black and White" }) } } id={ design.interior_options === "Black and White" ? "multi-option-selected" : ""  } src="/icons/interior-black-and-white.png" alt="interior-black-and-white.png" />
+                <img onClick={ () => { setDesign({ ...design, interior_options: "Cream" }) } } id={ design.interior_options === "Cream" ? "multi-option-selected" : ""  } src="/icons/interior-cream.png" alt="interior-cream.png" />
               </div>
               <div className="interior-details"><p>{ design.interior_options }</p><p>Included</p></div>
             </div>
@@ -142,7 +142,7 @@ function Design(props) {
                 </ul>
               </div>
               <div className="options-enhanced-autopilot-add">
-                <button>Add</button>
+                <button onClick={ () => { setDesign({...design, enhanced_autopilot: !design.enhanced_autopilot}) }}>{ design.enhanced_autopilot ? "Added" : "Add" }</button>
                 <p>$6,000</p>
               </div>
             </div>
@@ -158,7 +158,7 @@ function Design(props) {
                 </ul>
               </div>
               <div className="options-full-autopilot-add">
-                <button>Add</button>
+                <button onClick={ () => { setDesign({...design, full_autopilot: !design.full_autopilot}) }}>{ design.full_autopilot ? "Added" : "Add" }</button>
                 <p>$15,000</p>
               </div>
             </div>  

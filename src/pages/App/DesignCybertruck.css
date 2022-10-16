@@ -97,7 +97,6 @@
     display: flex;
     flex-flow: column;
     justify-content: space-around;
-
 }
 
 .specs-item h3 {
@@ -159,7 +158,7 @@
     padding: 0.5rem;
 }
 
-.motor-option-1:hover, .motor-option-2:hover {
+#option-selected {
     border: 2px solid var(--color-theme);
 }
 
@@ -191,7 +190,7 @@
     margin: 0.5rem;
 }
 
-.paint-selection > img:hover, .wheel-selection > img:hover, .interior-selection > img:hover {
+#multi-option-selected {
     border: 3px solid var(--color-theme);
     border-radius: 3rem;
     cursor: pointer;
