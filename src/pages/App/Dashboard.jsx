@@ -21,6 +21,22 @@ function Dashboard() {
     .catch(console.error)
   }
 
+  function handleDelete(designId) {
+    const configs = {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }
+    
+    fetch(`http://localhost:8080/design/${designId}`, configs)
+    .then((res)=> res.json())
+    .then((json) => {
+      fetchList()
+    })
+    .catch(console.error)
+  }
+
   useEffect(() => {
     fetchList();
   }, []);
@@ -43,6 +59,7 @@ function Dashboard() {
                     <h4>{ design.name }</h4>
                     <p>RN{ design.id }</p>
                   </div>
+                  <img onClick={ () => { handleDelete(design.id) } } src="/icons/delete.svg" alt="delete-button" />
                   <a href={`/${design.name.replace(/ /g,'').toLowerCase()}/design/${design.id}`}>Manage</a>
                 </div>
               </div>
