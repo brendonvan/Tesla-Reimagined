@@ -4,8 +4,10 @@ import { BrowserRouter as Router, Switch, Route, Link, useParams } from "react-r
 import Header from '../../components/Header';
 
 function Design() {
+  // Allow parameters for getting designId
   const params = useParams();
 
+  // Initialize design options
   const [design, setDesign] = useState({
     name: "Cybertruck",
     range: 300,
@@ -19,7 +21,7 @@ function Design() {
     full_autopilot: false
   })
   
-  // ADD DESIGN TO DATABASE
+  // Setup page to current selected options
   function initializeDesign() {
     const configs = {
       method: "GET",
@@ -35,6 +37,7 @@ function Design() {
     .catch(console.error)
   }
 
+  // Add design to database
   function handleOrder() {
     const configs = {
       method: "PUT",
@@ -62,7 +65,7 @@ function Design() {
     })
     .catch(console.error)
   }
-
+  
   useEffect(() => {
     initializeDesign()
   }, []);

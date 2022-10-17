@@ -3,6 +3,7 @@ import Header from './Login-Header';
 import { useState } from 'react';
 
 function Register() {
+  // Initialize error state to false
   const [errorState, setErrorState] = useState({ display: false });
   
   return (

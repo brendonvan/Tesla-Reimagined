@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useState } from 'react';
 
 function Landing() {
-  // Initialize current display view
+  // Initialize options
   let initialDisplayView = { 
     name: 'CYBERTRUCK',
     description: 'Better utility than a truck with more performance than a sports car',
@@ -27,10 +27,11 @@ function Landing() {
        },
     }
   };
+
+  // Set form state to init
   const [displayView, setDisplayView] = useState(initialDisplayView);
 
-  // Display View (name, description, pathName, zeroToSixty, range, motor, carOptions)
-
+  // Display Cybertruck Specs 
   function setViewToCyberTruck() {
     setDisplayView({ 
       name: 'CYBERTRUCK',
@@ -57,6 +58,7 @@ function Landing() {
     });
   }
 
+  // Display Model 3 Specs 
   function setViewToModel3() {
     setDisplayView({ 
       name: 'MODEL 3',
@@ -83,6 +85,7 @@ function Landing() {
     })
   }
 
+  // Display Model S Specs 
   function setViewToModelS() {
     setDisplayView({ 
       name: 'MODEL S',
@@ -109,6 +112,7 @@ function Landing() {
     })
   }
 
+  // Display Roadster Specs 
   function setViewToRoadster() {
     setDisplayView({ 
       name: 'ROADSTER',
@@ -134,6 +138,7 @@ function Landing() {
       } 
     })
   }
+  
   // OnClick() car options, (cybertruck, model3, models, roadster), will change carOptions
   function viewOption(path) {
     switch(path) {

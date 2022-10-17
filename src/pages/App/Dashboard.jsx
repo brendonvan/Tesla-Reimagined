@@ -4,7 +4,10 @@ import Header from '../../components/Header';
 
 
 function Dashboard() {
+  // Initialize dashboard list
   let [dashboardList, setDashboardList] = useState([]);
+
+  // Grab dashboard list for account from backend
   function fetchList() {
     const configs = {
       method: "GET",
@@ -21,6 +24,7 @@ function Dashboard() {
     .catch(console.error)
   }
 
+  // Handle Delete Design
   function handleDelete(designId) {
     const configs = {
       method: "DELETE",

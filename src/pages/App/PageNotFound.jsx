@@ -1,6 +1,5 @@
 import './PageNotFound.css';
 import Header from '../../components/Header';
-import { useEffect, useRef } from 'react';
 
 function PageNotFound() {
 

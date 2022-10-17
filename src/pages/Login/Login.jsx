@@ -3,6 +3,7 @@ import Header from './Login-Header';
 import { useState } from 'react';
 
 function Login() {
+  // Initialize states
   const [emailButtonState, setEmailButtonState] = useState({ display: true });
   const [errorState, setErrorState] = useState({ display: false });
   const [passwordState, setPasswordState] = useState({ display: false });
@@ -18,7 +19,6 @@ function Login() {
     } else {
       // return did not find email
       setErrorState({ display: true });
-
     }
     // ELSE SEND A MESSAGE SAYING EMAIL NOT FOUND
   }

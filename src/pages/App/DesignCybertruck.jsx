@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Header from '../../components/Header';
 
 function Design() {
-
+  // Initialize design options
   const [design, setDesign] = useState({
     name: "Cybertruck",
     range: 300,
@@ -18,7 +18,7 @@ function Design() {
     full_autopilot: false
   })
 
-  // ADD DESIGN TO DATABASE
+  // Add Design to Database
   function handleOrder() {
     const configs = {
       method: "POST",
@@ -46,8 +46,6 @@ function Design() {
     })
     .catch(console.error)
   }
-
-
 
   return (
     <>
