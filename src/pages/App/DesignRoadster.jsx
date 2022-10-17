@@ -54,7 +54,7 @@ function Design() {
         <div className="design-preview">
           <h1>Roadster</h1>
           <p>{ design.motor_options }</p>
-          <button onClick={ () => { handleOrder() } }>ORDER NOW</button>
+          <Link to="/dashboard"><button onClick={ () => { handleOrder() } }>ORDER NOW</button></Link>
         </div>
         <div className="design-select">
           <Link to="/cybertruck/design"><p>Cyber Truck</p></Link>

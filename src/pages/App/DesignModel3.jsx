@@ -12,7 +12,7 @@ function Design() {
     zero_to_sixty: 5.8,
     motor_options: "Rear-Wheel Drive",
     paint_options: "Pearl White Multi-Coat",
-    wheel_options: "19\" Tempest Wheels",
+    wheel_options: "18\" Aero Wheels",
     interior_options: "All Black",
     enhanced_autopilot: false,
     full_autopilot: false
@@ -54,7 +54,7 @@ function Design() {
         <div className="design-preview">
           <h1>Model 3</h1>
           <p>{ design.motor_options }</p>
-          <button onClick={ () => { handleOrder() } }>ORDER NOW</button>
+          <Link to="/dashboard"><button onClick={ () => { handleOrder() } }>ORDER NOW</button></Link>
         </div>
         <div className="design-select">
           <Link to="/cybertruck/design"><p>Cyber Truck</p></Link>

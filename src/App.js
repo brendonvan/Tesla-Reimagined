@@ -1,5 +1,6 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom';
+import PageNotFound from './pages/App/PageNotFound';
 import Home from './pages/App/Home';
 import Dashboard from './pages/App/Dashboard';
 import MoreInfo from './pages/App/MoreInfo'
@@ -38,6 +39,8 @@ function App() {
 
       <Route path='/oauth2/v1/fakeauthorize/' element={<Login/>}></Route>
       <Route path='/oauth2/v1/fakeregister/' element={<Register/>}></Route>
+
+      <Route path='/*' element={<PageNotFound/>}></Route>
     </Routes>
   );
 }

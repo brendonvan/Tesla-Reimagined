@@ -13,7 +13,7 @@ function Design() {
     zero_to_sixty: 5.8,
     motor_options: "Rear-Wheel Drive",
     paint_options: "Pearl White Multi-Coat",
-    wheel_options: "19\" Tempest Wheels",
+    wheel_options: "18\" Aero Wheels",
     interior_options: "All Black",
     enhanced_autopilot: false,
     full_autopilot: false
