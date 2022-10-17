@@ -3,7 +3,6 @@ import Header from '../../components/Header';
 import Landing from '../../components/Home/Landing';
 
 function Home() {
-
   return (
     <>
       <Header />
