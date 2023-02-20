@@ -10,7 +10,6 @@ function Home() {
         <iframe src="/icons/background.png" alt="background-cybertruck" frameborder='0' width='120%' height='120%'></iframe>
         <Landing />
       </div>
-  
     </>
   )
 }

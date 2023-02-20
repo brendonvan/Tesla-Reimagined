@@ -27,7 +27,7 @@ function Design() {
         "Content-Type": "application/json",
       },
     }
-    fetch(`http://localhost:8080/dashboard/${params.id}`, configs)
+    fetch(`https://tesla-reimagined-api.up.railway.app/dashboard/${params.id}`, configs)
     .then((res)=> res.json())
     .then((json) => {
         setDesign(json);
@@ -55,7 +55,7 @@ function Design() {
       },
     }
 
-    fetch(`http://localhost:8080/design/${params.id}`, configs)
+    fetch(`https://tesla-reimagined-api.up.railway.app/design/${params.id}`, configs)
     .then((res)=> res.json())
     .then((json) => {
         console.log(json);

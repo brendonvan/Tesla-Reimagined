@@ -16,7 +16,7 @@ function Dashboard() {
       },
     }
 
-    fetch(`http://localhost:8080/dashboard`, configs)
+    fetch(`https://tesla-reimagined-api.up.railway.app/dashboard`, configs)
     .then((res)=> res.json())
     .then((json) => {
         setDashboardList(json);
@@ -33,7 +33,7 @@ function Dashboard() {
       },
     }
     
-    fetch(`http://localhost:8080/design/${designId}`, configs)
+    fetch(`https://tesla-reimagined-api.up.railway.app//design/${designId}`, configs)
     .then((res)=> res.json())
     .then((json) => {
       fetchList()

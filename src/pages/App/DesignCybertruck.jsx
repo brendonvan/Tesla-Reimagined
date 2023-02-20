@@ -39,7 +39,7 @@ function Design() {
       },
     }
 
-    fetch(`http://localhost:8080/design`, configs)
+    fetch(`https://tesla-reimagined-api.up.railway.app/design`, configs)
     .then((res)=> res.json())
     .then((json) => {
         console.log(json);
