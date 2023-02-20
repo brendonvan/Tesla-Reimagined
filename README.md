@@ -113,6 +113,8 @@ A Model can be in multiple Purchases (many-to-many)
 
 # API
 
+Github Repo: https://github.com/brendonvan/Tesla-Reimagined-Backend
+
 ```json
 [
   {
